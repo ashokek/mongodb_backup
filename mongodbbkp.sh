@@ -26,3 +26,6 @@ s3cmd put mongodb-$HOSTNAME-$TIMESTAMP.tar s3://$S3_BUCKET_NAME/$S3_BUCKET_PATH/
 
 rm -rf mongodb-$HOSTNAME-$TIMESTAMP
 rm -rf mongodb-$HOSTNAME-$TIMESTAMP.tar
+
+#Cronjob
+# 00 01 * * * /bin/bash /home/ubuntu/mongodbbkp/mongodbbkp.sh
